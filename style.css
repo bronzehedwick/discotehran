@@ -1,3 +1,30 @@
+html, body {
+  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background-color: black;
+  background: url('./assets/bg.png') 0 0 repeat black;
+}
+
+.navigation {
+  padding: 10px;
+  margin: 10px;
+  float: left;
+  background: black;
+  top: 0;
+  left: 0;
+
+}
+.navigation a {
+  color: white;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  color: #ff7b00;
+}
 @-webkit-keyframes rotating /* Safari and Chrome */ {
   from {
     -webkit-transform: rotate(0deg);
@@ -40,10 +67,48 @@
 }
 
 .vinyl-container {
-  width: 700px;
-  height: 700px;
+  width: 600px;
+  height: 600px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.text-container {
+  border-top: 4px double black;
+  border-right: 4px double black;
+  border-left: 4px double black;
+  height: 200px;
+  bottom: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  background: #ff7b00
+}
+
+
+.text-container-about {
+  padding: 25px;
+  color: black;
+  width: 600px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-top: 4px double black;
+  border-right: 4px double black;
+  border-left: 4px double black;
+  border-bottom: 4px double black;
+  background: #ff7b00
+}
+
+
+.text {
+  height: 100%;
+  width: auto;
+  background: url('./assets/text.png') center center no-repeat transparent;
+  background-size: 50%;
 }
