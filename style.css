@@ -105,6 +105,10 @@ body {
   background: #ff7b00
 }
 
+.text-container-about a {
+  color: black;
+  text-decoration: underline;
+}
 
 .text {
   height: 100%;
