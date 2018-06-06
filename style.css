@@ -1,6 +1,13 @@
+@import url('./reset.css');
+
+* {
+  box-sizing: border-box;
+}
+
 html, body {
   font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
+
 }
 
 body {
@@ -9,15 +16,38 @@ body {
 }
 
 .navigation {
-  padding: 10px;
-  margin: 10px;
-  float: left;
-  background: black;
   top: 0;
   left: 0;
-
+  height: 50px;
+  padding: 10px;
+  position: absolute;
 }
+
+.navigation ul {
+  height: 100%;
+  list-style: none;
+}
+
+.navigation li {
+  height: 100%;
+  display: inline-block;
+  float: left;
+  margin-right: 5px;
+  width: auto;
+}
+
+.navigation img {
+  height: 100%;
+  width: auto;
+}
+
 .navigation a {
+  height: 100%;
+  width: 100%;
+  display: block;
+  padding: 5px 7px;
+  background: black;
+
   color: white;
   text-decoration: none;
 }
@@ -25,6 +55,7 @@ body {
 .navigation a:hover {
   color: #ff7b00;
 }
+
 @-webkit-keyframes rotating /* Safari and Chrome */ {
   from {
     -webkit-transform: rotate(0deg);
