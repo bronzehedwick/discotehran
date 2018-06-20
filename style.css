@@ -132,21 +132,25 @@ body {
   padding: 25px;
   color: white;
   height: auto;
-  border-top: 4px double black;
-  border-right: 4px double black;
-  border-left: 4px double black;
-  border-bottom: 4px double black;
+  border-top: 4px double white;
+  border-right: 4px double white;
+  border-left: 4px double white;
+  border-bottom: 4px double white;
   background: #ff7b00
 }
 
 .text-container-about a {
-  color: black;
+  color: white;
   text-decoration: underline;
 }
 
 .text {
   height: 100%;
   width: auto;
+}
+
+.archive-list a {
+  color: white;
 }
 
 @media only screen and (min-width: 768px) {
