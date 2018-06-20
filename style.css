@@ -130,13 +130,8 @@ body {
   font-size: 1.3em;
   line-height: 1.3;
   padding: 25px;
-  color: black;
-  width: 600px;
+  color: white;
   height: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   border-top: 4px double black;
   border-right: 4px double black;
   border-left: 4px double black;
@@ -184,6 +179,14 @@ body {
   .text-container img.mobile {
     display: none;
   }
+  .text-container-about {
+    width: 600px;
+    background: #fd1f03;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 
@@ -219,6 +222,12 @@ body {
     margin-left: auto;
     margin-right: auto;
     height: auto;
+  }
+  .text-container-about {
+    width: auto;
+    margin: 100px 10% 10% 10%;
+    background: #fd1f03;
+    position: relative;
   }
 }
 
