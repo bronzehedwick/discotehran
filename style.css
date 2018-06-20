@@ -155,11 +155,7 @@ body {
 .text {
   height: 100%;
   width: auto;
-  background: url('./assets/text.png') center center no-repeat transparent;
-  background-size: 50%;
 }
-
-
 
 @media only screen and (min-width: 768px) {
   /* tablets and desktop */
@@ -174,12 +170,22 @@ body {
     background-position: 50% 50%;
   }
   .text-container {
-    height: 200px;
+    border-bottom: 4px double white;
+    height: auto;
     position: absolute;
     bottom: 0;
     left: 0;
-    bottom: 0;
     right: 0;
+  }
+  .text-container img.desktop {
+    width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+  .text-container img.mobile {
+    display: none;
   }
 }
 
@@ -199,8 +205,31 @@ body {
   }
   .text-container {
     border-bottom: 4px double white;
-    height: 400px;
-    position: relative;
-    margin-top: 50vh;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+
+  }
+  .text-container img.desktop {
+    display: none;
+  }
+  .text-container img.mobile {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  /* Wide Screens */
+  .pattern {
+
+    background-size: 3000% 300%; 
+    background-position: 50% 50%;
   }
 }
