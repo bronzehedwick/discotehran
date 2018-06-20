@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120549744-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -9,6 +10,11 @@
 
       gtag('config', 'UA-120549744-1');
     </script>
+    <!-- Optional JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
 
     <!-- Required meta tags -->
@@ -16,26 +22,26 @@
     <meta property="og:title" content="Disco Tehran"/>
     <meta property="og:url" content="http://discotehran.nyc"/>
     <meta property="og:site_name" content="Disco Tehran"/>
+    <meta charset="utf-8">
     <meta property="og:image:width" content="600"/>
     <meta property="og:image:height" content="600"/>
     <meta property="og:description" content="Disco Tehran is an underground party and performance project in the Lower East Side, NYC. This dreamboat connects NYC to the era of 1970's cosmopolitan venues in Tehran. It is a funky warm discothéque with live shows by local and international bands."/>
-
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="./assets/favicon.ico">
-
+    <link rel="icon" href="../assets/favicon-2.ico">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
     <title>Disco Tehran</title>
   </head>
   <body>
-
     <nav class="navigation">
       <ul>
+        <li>
+          <a href="../index.html">
+            Home
+          </a>
+        </li>
         <li>
           <a href="../about.html">
             About
@@ -43,38 +49,64 @@
         </li>
         <li>
           <a href="https://instagram.com/discotehran.nyc">
-            <img alt="Disco Tehran on Instagram" src="./assets/ig-icon.png">
+            <img alt="Disco Tehran on Instagram" src="../assets/ig-icon.png">
           </a>
         </li>
         <li>
           <a href="https://facebook.com/discotehran">
-            <img alt="Disco Tehran on Facebook" src="./assets/fb-icon.png">
+            <img alt="Disco Tehran on Facebook" src="../assets/fb-icon.png">
           </a>
         </li>
         <li>
           <a href="http://eepurl.com/dxpJTf">
-            <img alt="Disco Tehran Newsletter" src="./assets/newsletter-icon.png">
+            <img alt="Disco Tehran Newsletter" src="../assets/newsletter-icon.png">
           </a>
         </li>
       </ul>
       
     </nav>
 
-    <div class="vinyl-container">
-      <div class="vinyl rotating"></div>
-    </div>
 
-    <div class="text-container">
-      
-      <div class="text">
+    <div class="text-container-about">
+      <h3>Disco Tehran Archive</h3>
+      <br>
+      <br>
+      <span class="loading">
+        Loading episodes ...
+      </span>
+      <ul class="archive-list">
         
-      </div>
-    
+      </ul>
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <div class="pattern"></div>
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        var $list = $('.archive-list');
+        var $loading = $('.loading');
+        $.getJSON('./archive.json', function(data) {
+          $loading.slideUp(200);
+          console.log(data)
+          data.forEach(function(episode, index) {
+            console.log(episode)
+            console.log(index)
+            var $item = $('<li></li>');
+            var html = [
+              '<a href="',
+              episode.url,
+              '">',
+              episode.title,
+              ' - ',
+              episode.date,
+              ' - ',
+              episode.location,
+              '</a>'
+            ].join('')
+            $item.html(html);
+            $list.append($item);
+          })
+        })
+      });
+    </script>
   </body>
 </html>
