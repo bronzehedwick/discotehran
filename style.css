@@ -246,10 +246,6 @@ body {
     top: 30%;
     left: 50%;
   }
-  .pattern {
-    top: -120%;
-    left: -100%;
-  }
   .text-container {
     border-bottom: 4px double white;
     height: auto;
