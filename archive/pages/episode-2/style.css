@@ -14,7 +14,7 @@ html, body {
 }
 
 body {
-  background-color: #f23868;
+  background-color: #009e69;
 }
 
 .navigation {
@@ -48,9 +48,9 @@ body {
   width: 100%;
   display: block;
   padding: 5px 7px;
-  background: #f23868;
-  border: 2px solid #499984;
-  color: #f9f3e8;
+  background: #009e69;
+  border: 2px solid #ffae1d;
+  color: white;
   text-decoration: none;
 }
 
@@ -84,36 +84,34 @@ body {
   }
 }
 
-@-webkit-keyframes scroll{
-  100%{
-    background-position:3000px 0px;
+@-webkit-keyframes rotatingback /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
   }
 }
-
-@-moz-keyframes scroll{
-  100%{
-    background-position:3000px 0px;
+@keyframes rotatingback {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(-360deg);
+    -moz-transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+    -o-transform: rotate(-360deg);
+    transform: rotate(-360deg);
   }
 }
-
-@-o-keyframes scroll{
-  100%{
-    background-position:3000px 0px;
-  }
-}
-
-@-ms-keyframes scroll{
-  100%{
-    background-position:3000px 0px;
-  }
-}
-
-@keyframes scroll{
-  100%{
-    background-position:3000px 0px;
-  }
-}
-
 .rotating {
   -webkit-animation: rotating 2s linear infinite;
   -moz-animation: rotating 2s linear infinite;
@@ -126,29 +124,28 @@ body {
 .vinyl {
   pointer-events: none;
   position: relative;
-  background: url('./assets/rotating-vinyl-for-landing-page.png') 50% 50% repeat;
+  background: url('./assets/Logo---Berlin-Nights.png') 50% 50% no-repeat;
   background-size: contain; 
   width: 100%;
   height: 100%;
 }
-
-.scrolling {
-  -webkit-animation:100s scroll infinite linear;
-  -moz-animation:100s scroll infinite linear;
-  -o-animation:100s scroll infinite linear;
-  -ms-animation:100s scroll infinite linear;
-  animation:100s scroll infinite linear;
+.rotatingback {
+  -webkit-animation: rotatingback 100s linear infinite;
+  -moz-animation: rotatingback 100s linear infinite;
+  -ms-animation: rotatingback 100s linear infinite;
+  -o-animation: rotatingback 100s linear infinite;
+  animation: rotatingback 100s linear infinite;
 }
 .pattern {
   position: fixed;
   z-index: -1;
-  background: url('./assets/bg.png') repeat;
-  width: 100%;
-  height: 100%;
-  top:0;
-  left:0;
-  background-size: cover; 
-  background-position: center center;
+  background: url('./assets/berlin-nights-pattern.svg') 50% 50% no-repeat;
+  width: 300%;
+  height: 300%;
+  top: -75%;
+  left: -75%;
+  background-size: 100% 100%; 
+  background-position: 50% 50%;
 }
 
 .vinyl-container {
@@ -174,7 +171,7 @@ body {
   border-right: 4px double white;
   border-left: 4px double white;
   border-bottom: 4px double white;
-  background: #f23868
+  background: #ff7b00
 }
 
 .text-container-about a {
@@ -201,13 +198,13 @@ body {
   }
 
   .pattern {
-    /*width: 200%;
+    width: 200%;
     height: 200%;
     top: -50%;
     left: -50%;
     transform: translate(-50%, -50%);
     background-size: 100% 100%; 
-    background-position: 50% 50%;*/
+    background-position: 50% 50%;
   }
   .text-container {
     border-bottom: 4px double white;
@@ -229,6 +226,7 @@ body {
   }
   .text-container-about {
     width: 600px;
+    background: #fd1f03;
     position: absolute;
     top: 50%;
     left: 50%;
