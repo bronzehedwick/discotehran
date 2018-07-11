@@ -115,10 +115,10 @@ body {
 }
 
 .rotating {
-  -webkit-animation: rotating 2s linear infinite;
-  -moz-animation: rotating 2s linear infinite;
-  -ms-animation: rotating 2s linear infinite;
-  -o-animation: rotating 2s linear infinite;
+  -webkit-animation: rotating 5s linear infinite;
+  -moz-animation: rotating 5s linear infinite;
+  -ms-animation: rotating 5s linear infinite;
+  -o-animation: rotating 5s linear infinite;
   animation: rotating 5s linear infinite;
 }
 
@@ -133,11 +133,11 @@ body {
 }
 
 .scrolling {
-  -webkit-animation:100s scroll infinite linear;
-  -moz-animation:100s scroll infinite linear;
-  -o-animation:100s scroll infinite linear;
-  -ms-animation:100s scroll infinite linear;
-  animation:100s scroll infinite linear;
+  -webkit-animation:500s scroll infinite linear;
+  -moz-animation:500s scroll infinite linear;
+  -o-animation:500s scroll infinite linear;
+  -ms-animation:500s scroll infinite linear;
+  animation:500s scroll infinite linear;
 }
 .pattern {
   position: fixed;
@@ -147,7 +147,7 @@ body {
   height: 100%;
   top:0;
   left:0;
-  background-size: cover; 
+  background-size: contain; 
   background-position: center center;
 }
 
