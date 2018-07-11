@@ -156,11 +156,7 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.text-container {
 
-  background: url('./assets/jacket-repeating-bg.png') repeat-x;
-
-}
 
 
 .text-container-about {
@@ -181,14 +177,7 @@ body {
   text-decoration: underline;
 }
 
-.text {
-  height: 100%;
-  width: auto;
-    border-top: 4px double white;
-  border-right: 4px double white;
-  border-left: 4px double white;
 
-}
 
 .archive-list a {
   color: white;
@@ -196,6 +185,9 @@ body {
 
 @media only screen and (min-width: 768px) {
   /* tablets and desktop */
+  .text-container {
+    background: url('./assets/jacket-repeating-bg.png') repeat-x;
+  } 
   .vinyl-container {
     width: 600px;
     height: 600px;
@@ -213,12 +205,22 @@ body {
     background-position: 50% 50%;*/
   }
   .text-container {
-    border-bottom: 4px double white;
     height: auto;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
+  }
+  .text {
+    height: 100%;
+    width: auto;
+    border-top: 4px double white;
+    border-right: 4px double white;
+    border-left: 4px double white;
+    border-bottom: 4px double white;
+  }
+  .text-container {
+    border: none;
   }
   .text-container img.desktop {
     width: 800px;
@@ -250,13 +252,20 @@ body {
     left: 50%;
   }
   .text-container {
-    border-bottom: 4px double white;
     height: auto;
     position: absolute;
+    border-top: 4px double white;
+    border-right: 4px double white;
+    border-left: 4px double white;
+    border-bottom: 4px double white;
     bottom: 0;
     left: 0;
     right: 0;
     padding: 30px 10px;
+    background: #4b9b86;
+  }
+  .text {
+    border: none;
   }
   .text-container img.desktop {
     display: none;
