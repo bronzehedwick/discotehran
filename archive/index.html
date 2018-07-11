@@ -84,11 +84,8 @@
         var $list = $('.archive-list');
         var $loading = $('.loading');
         $.getJSON('./archive.json', function(data) {
-          $loading.slideUp(200);
-          console.log(data)
+          $loading.fadeOut(200);
           data.forEach(function(episode, index) {
-            console.log(episode)
-            console.log(index)
             var $item = $('<li></li>');
             var html = [
               '<a href="',
