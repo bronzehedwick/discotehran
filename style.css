@@ -157,10 +157,9 @@ body {
 }
 
 .text-container {
-  border-top: 4px double white;
-  border-right: 4px double white;
-  border-left: 4px double white;
-  background: #fa2200
+
+  background: url('./assets/jacket-repeating-bg.png') repeat-x;
+
 }
 
 
@@ -185,6 +184,10 @@ body {
 .text {
   height: 100%;
   width: auto;
+    border-top: 4px double white;
+  border-right: 4px double white;
+  border-left: 4px double white;
+
 }
 
 .archive-list a {
