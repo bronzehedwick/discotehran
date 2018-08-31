@@ -126,7 +126,7 @@ body {
 .vinyl {
   pointer-events: none;
   position: relative;
-  background: url('./assets/rotating-vinyl-for-landing-page.png') 50% 50% repeat;
+  background: url('./assets/rotating-vinyl-for-landing-page.png') 50% 50% no-repeat;
   background-size: contain; 
   width: 100%;
   height: 100%;
@@ -144,11 +144,12 @@ body {
   z-index: -1;
   background: url('./assets/bg.png') repeat;
   width: 100%;
+  background-size: 12px 12px;
   height: 100%;
   top:0;
   left:0;
-  background-size: contain; 
-  background-position: center center;
+  /*background-size: contain; */
+  background-position: top left;
 }
 
 .vinyl-container {
