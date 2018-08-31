@@ -6,9 +6,16 @@
     "url": "pages/episode-1/index.html"
   },
   {
-    "title": "Episode 2 (Berlin Nights)",
+    "title": "Episode 2",
     "location": "Mood Ring",
     "date": "6/25/2018",
     "url": "pages/episode-2/index.html"
+  },
+  {
+
+    "title": "Episode 3",
+    "location": "Home Sweet Home",
+    "date": "7/16/2018",
+    "url": "pages/episode-3/index.html"
   }
 ]
