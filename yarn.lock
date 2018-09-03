@@ -2,6 +2,10 @@
 # yarn lockfile v1
 
 
+jquery@^3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
+
 p5@^0.7.1:
   version "0.7.1"
   resolved "https://registry.yarnpkg.com/p5/-/p5-0.7.1.tgz#8283e7e9eb928cdb957541d32be2b0ff7f2251e0"
