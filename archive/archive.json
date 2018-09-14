@@ -17,5 +17,12 @@
     "location": "Home Sweet Home",
     "date": "7/16/2018",
     "url": "pages/episode-3/index.html"
+  },
+  {
+
+    "title": "Episode 4",
+    "location": "Mood Ring",
+    "date": "9/3/2018",
+    "url": "pages/episode-4/index.html"
   }
 ]
