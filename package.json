@@ -1,12 +1,5 @@
 {
-  "name": "discotehran",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:maniart/discotehran.git",
-  "author": "maniart <mani.art@gmail.com>",
-  "license": "MIT",
   "dependencies": {
-    "jquery": "^3.3.1",
-    "p5": "^0.7.1"
+    "jquery": "^3.3.1"
   }
 }

@@ -15,6 +15,8 @@ html, body {
 
 body {
   /*background-color: #f23868;*/
+  background: url('./assets/page-bg.png') 0 0 repeat transparent;
+  background-size: 15% auto;
 }
 
 .navigation {
@@ -48,8 +50,8 @@ body {
   width: 100%;
   display: block;
   padding: 5px 7px;
-  background: #c23413;
-  border: 2px solid rgb(16, 81, 251);
+  background: #0791dd;
+  border: 2px solid #d7275b;
   color: #f9f3e8;
   text-decoration: none;
 }
@@ -171,7 +173,7 @@ body {
   border-right: 4px double white;
   border-left: 4px double white;
   border-bottom: 4px double white;
-  background: #c23413;
+  background: #0791dd;
 }
 
 .text-container-about a {
@@ -189,7 +191,7 @@ body {
   /* tablets and desktop */
   .text-container {
     background: url('./assets/jacket-repeating-bg.png') repeat-x;
-    background-color: #c23413;
+    background-color: #0791dd;
   } 
   .vinyl-container {
     width: 600px;
@@ -265,7 +267,7 @@ body {
     left: 0;
     right: 0;
     padding: 30px 10px;
-    background: #c23413;
+    background: #0791dd;
   }
   .text {
     border: none;
@@ -283,7 +285,7 @@ body {
   .text-container-about {
     width: auto;
     margin: 100px 10% 10% 10%;
-    background: #c23413;
+    background: #0791dd;
   }
 }
 
